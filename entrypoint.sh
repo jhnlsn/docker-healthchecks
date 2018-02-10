@@ -82,7 +82,7 @@ settingsConfiguration() {
             ;;
 	    esac
 
-        if [ "$setting_key" = "SECRET_KEY" ] || [ "$setting_key" = "HC_HOST" ] || ["$setting_key" = "PD_VENDOR_KEY"]; then
+        if [ "$setting_key" = "SECRET_KEY" ] || [ "$setting_key" = "HC_HOST" ] || [ "$setting_key" = "PD_VENDOR_KEY" ]; then
             setting_type="string"
         elif [ "$setting_key" = "ALLOWED_HOSTS" ] || \
             [ "$setting_key" = "AUTHENTICATION_BACKENDS" ] || [ "$setting_key" = "TEMPLATES" ] || \
